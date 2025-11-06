@@ -205,5 +205,7 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+There are many instances where value systems are embedded into data systems encountered in my life. These are usually overlooked but it is interesting to think about from the perspective of this course, as assumptions and biases of the creators of the databases are presented to us all the time. One example is picking a gender field. I have seen this frequently from shopping for clothes to applying to jobs. Some fields just include male/female which is clearly limiting to those who do not identify as one or the other. Some fields include more options but are still limited to the creator's idea of gender. Some fields include an "other" option where you can write your own choice or a "prefer not to say" option, which I think are necessary inclusions and show flexibility from the creators. 
+
+Another example of value systems being embedded into data systems that I have encountered is choosing a race/ethnicity option. I have mostly seen it when applying to schools or jobs, they often prompt you to select your race/ethnicity. There are typically plenty of options but sometimes you can only choose one. With my mother born in China and father born in Canada, I am a mix of two races and so it is interesting that these fields sometimes force me to choose one or the other. I never thought much of this before, but it is interesting in this context that the assumptions or lack of forethought by the creator forced me to limit my identity when filling out these forms. 
 ```
