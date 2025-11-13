@@ -54,7 +54,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+We can store the the address information in the CUSTOMER_ADDRESS table with one row per customer which includes customer_id, street, city, province, country, postal_code columns. Type 1 would be to have the row replaced when a customer updates their address. The old address would not be saved. The other way to do it would be to add a start_date, end_date, and a boolean current_address column to the table. That way when a customer updates their address we can set end_date to the date of the update and change current_address to FALSE, then add the new address for the customer with the date as start_date and set current_address to TRUE. This is type 2, where the history of addresses is retained. We can also include an Address_ID colummn to this set up if we want to link orders to the address of the customer at the time of the order. 
 ```
 
 ***
