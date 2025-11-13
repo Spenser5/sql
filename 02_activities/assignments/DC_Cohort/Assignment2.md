@@ -54,7 +54,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+We can store the the address information in the CUSTOMER_ADDRESS table with one row per customer which includes customer_id, street, city, province, country, postal_code columns. Type 1 would be to have the row replaced when a customer updates their address. The old address would not be saved. The other way to do it would be to add a start_date, end_date, and a boolean current_address column to the table. That way when a customer updates their address we can set end_date to the date of the update and change current_address to FALSE, then add the new address for the customer with the date as start_date and set current_address to TRUE. This is type 2, where the history of addresses is retained. We can also include an Address_ID colummn to this set up if we want to link orders to the address of the customer at the time of the order. 
 ```
 
 ***
@@ -183,5 +183,7 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+There are several ethical issues important to this article. The most obvious being that human biases leak into machine learning and AI programs since at their core they are all trainded by human made data. The rabbit-hole that the author takes the reader down is very interesting and makes it clear that each step along the way, humans are influencing the information that machines are trained on. Each image in the image set was tagged by humans from word datasets created by humans based on datasets created by humans. Thus, systematic biases are bound to appear and be picked up by the models we train with the data. People will tag the images differently (even just slightly) based on their own perspective and ideals. This leads to another potential ethical issue, where not every person using these machine learning programs will understand how the model was trained and the potential inherent biases. Many people will trust computers and their output as unbiased information, but this may not always be entirely true. 
+
+Another ethical issue that came up in this story to a lesser degree was giving proper credit to those who created the large training datsets. The author was clearly trying to get to the bottom of who exatcly was doing the work (professors, hired workers, graduate students) and it was clear this was not always possible. Mentioning a few times that wikipedia or other articles failed to mention all that contirbuted to the project. This is an issue firstly becuase everyone who helped should be credited, but also because it makes it harder to pinpoint potential biases in the data when it is unclear who actually helped put it together. 
 ```
